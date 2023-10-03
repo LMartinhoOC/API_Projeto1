@@ -17,7 +17,7 @@ namespace API_Projeto1.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post([FromBody]POSTNumero numero)
+        public ActionResult Post([FromBody]PostNumero numero)
         {
             int num = Convert.ToInt32(numero.Num);
             numero.Num = (num * 2).ToString();
